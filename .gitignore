@@ -1,0 +1,5 @@
+LocalConfig.ahk
+Archive/
+*.exe
+*.bak
+*.tmp
