@@ -23,22 +23,22 @@ Sleep(2000)
 A_IconHidden := false
 
 ; Spanish characters with AltGr.
->!n::SendText("ñ")
->!+n::SendText("Ñ")
->!a::SendText("á")
->!e::SendText("é")
->!i::SendText("í")
->!o::SendText("ó")
->!u::SendText("ú")
->!+a::SendText("Á")
->!+e::SendText("É")
->!+i::SendText("Í")
->!+o::SendText("Ó")
->!+u::SendText("Ú")
->!y::SendText("ü")
->!+y::SendText("Ü")
->!/::SendText("¿")
->!1::SendText("¡")
+>!n::ñ
+>!+n::Ñ
+>!a::á
+>!e::é
+>!i::í
+>!o::ó
+>!u::ú
+>!+a::Á
+>!+e::É
+>!+i::Í
+>!+o::Ó
+>!+u::Ú
+>!y::ü
+>!+y::Ü
+>!/::¿
+>!1::¡
 
 #HotIf !WinActive("Monkeytype")
 ::->::→    ; Right Arrow
