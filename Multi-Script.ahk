@@ -40,6 +40,18 @@ A_IconHidden := false
 >!/::¿
 >!1::¡
 
+; Turn off monitor instantly using Right Alt + Delete or Right Alt + Insert
+#HotIf GetKeyState("RAlt", "P")
+*Delete::
+*Insert::
+{
+    KeyWait("Delete")
+    KeyWait("Insert")
+    KeyWait("RAlt")
+    SendMessage(0x0112, 0xF170, 2,, "Program Manager")
+}
+#HotIf
+
 #HotIf !WinActive("Monkeytype")
 ::->::→    ; Right Arrow
 ::<-::←    ; Left Arrow
